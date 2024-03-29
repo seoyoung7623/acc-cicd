@@ -24,5 +24,5 @@ jobs:
         shell: bash
 
       - name: Build with Gradle
-        run: ./cicd/gradlew build
+        run: cd cicd && ./gradlew build
         shell: bash
