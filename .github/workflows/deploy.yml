@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     env:
-      working-directory: ../acc-cicd/cicd
+      working-directory: ../cicd
     steps:
       - name: Checkout
         uses: actions/checkout@v2
