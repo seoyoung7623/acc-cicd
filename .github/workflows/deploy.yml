@@ -23,6 +23,6 @@ jobs:
         run: cd cicd && chmod +x ./gradlew
         shell: bash
 
-      - name: cd cicd && Build with Gradle
-        run: ./gradlew build
+      - name: Build with Gradle
+        run: ./cicd/gradlew build
         shell: bash
