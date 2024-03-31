@@ -24,11 +24,11 @@ jobs:
           java-version: 11
 
       - name: Grant execute permission for gradlew
-        run: chmod +x ./cicd/gradlew
+        run: cd cicd && chmod +x ./gradlew
         shell: bash
       
       - name: Build with Gradle
-        run: ./cicd/gradlew build
+        run: cd cicd && ./gradlew build
         shell: bash
         
       - name: Make Zip File
