@@ -29,5 +29,5 @@ tasks.named('test') {
 }
 
 tasks.named("jar"){
-	enables = flase
+	enables = false
 }
