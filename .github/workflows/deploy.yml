@@ -28,11 +28,11 @@ jobs:
         shell: bash
       
       - name: Build with Gradle
-        run: ./cicd/gradlew -p ./cicd build
+        run: ./cicd/gradlew build
         shell: bash
         
       - name: Make Zip File
-        run: zip -qq -r $PROJECT_NAME.zip .
+        run: zip -qq -r ./$GITHUB_SHA.zip .
         shell: bash
       
       - name: Configure AWS credentials
