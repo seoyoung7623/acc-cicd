@@ -28,7 +28,7 @@ jobs:
         shell: bash
 
       - name: Build with Gradle
-        run: cd cicd && ./gradlew build
+        run: cd cicd && ls -al && ./gradlew build
         shell: bash
         
       - name: Make Zip File
