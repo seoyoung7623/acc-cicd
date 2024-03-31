@@ -32,7 +32,7 @@ jobs:
         shell: bash
         
       - name: Make Zip File
-        run: cd cicd/build/libs && zip -qq -r $PROJECT_NAME.zip .
+        run: zip -qq -r $PROJECT_NAME.zip .
         shell: bash
       
       - name: Configure AWS credentials
