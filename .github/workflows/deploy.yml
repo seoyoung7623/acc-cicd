@@ -27,8 +27,12 @@ jobs:
         run: chmod +x ./cicd/gradlew
         shell: bash
       
+      - name: Change directory to Gradle project
+        run: cd cicd
+        shell: bash
+
       - name: Build with Gradle
-        run: ./cicd/gradlew build
+        run: ./gradlew build
         shell: bash
         
       - name: Make Zip File
