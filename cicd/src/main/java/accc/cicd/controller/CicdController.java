@@ -8,6 +8,7 @@ public class CicdController{
 	
 	@GetMapping("/hello")
 	public String helloWorld(){
-		return "Hello CI/CD";
+		return "안녕하세요.";
 	}
+
 }
