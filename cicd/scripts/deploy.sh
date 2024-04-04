@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-REPOSITORY=/home/ec2-user/cicdproject/cicd
+REPOSITORY=/home/ubuntu/cicdproject/cicd
 cd $REPOSITORY
 
 APP_NAME=cicdproject
